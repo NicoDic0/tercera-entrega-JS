@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicaciones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+
+<body>
+    <section class="nav">
+        <div class="" id="post"><img src="svgs/post.svg" alt="post"></div>
+        <div class="" id="logo"><a href="index.html"><img src="svgs/logo.png" alt="logo"></a></div>
+        <div class="" id="searchImg"><img src="svgs/search.svg" alt="search"></div>
+
+    </section>
+
+    <div id="myModalSearch" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Buscar Publicación</h2>
+            <label for="searchModal">ID, Título, Categoría o Estado:</label>
+            <input type="text" id="searchModal">
+            <button onclick="searchPostModal()">Buscar</button>
+        </div>
+    </div>
+
+    <div id="search-results"></div>
+
+    <div class="cajas" id="post-container"></div>
+
+
+    <div id="myModalAdd" class="modal-post">
+        <div class="modal-content-post">
+            <span class="close" onclick="closeModalAdd()">&times;</span>
+            <h2 class="tituloPublicacion">Agregar Nueva Publicación</h2>
+            <label for="category">Categoría:</label>
+            <input type="text" id="category">
+            <label for="title">Título:</label>
+            <input type="text" id="title">
+            <label for="status">Imagen:</label>
+            <input type="file" id="imageInput" accept="image/"> 
+            <label for="status">Descripción:</label>
+            <input type="text" id="description"> 
+            <button id="addPostBtn" onclick="addPost()">Agregar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
