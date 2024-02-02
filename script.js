@@ -38,7 +38,7 @@ const post = [
   {
     id: 5,
     category: "coberturas",
-    title: "En fotos: La Renga en el Estadio de Racing",
+    title: "En fotos: La Renga en el Estadio Racing",
     status: "publicado",
     img: "pngs/renga.png",
     description:
@@ -71,9 +71,9 @@ class Check {
     this.saveToLocalStorage();
     
   }
-
+    
+  // Funcion para guardar en el Local Storage los nuevos posteos
    saveToLocalStorage() {
-    // Convierte los posteos a formato JSON y los guarda en el Local Storage
     localStorage.setItem("posts", JSON.stringify(this.post));
   }
 
