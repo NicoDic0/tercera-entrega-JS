@@ -38,7 +38,7 @@ const post = [
   {
     id: 5,
     category: "coberturas",
-    title: "En fotos: La Renga en el Racing",
+    title: "En fotos: La Renga en el Estadio de Racing",
     status: "publicado",
     img: "pngs/renga.png",
     description:
